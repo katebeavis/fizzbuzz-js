@@ -1,26 +1,34 @@
 describe("Fizzbuzz", function() {
 
   // var fizzbuzz;
+  beforeEach(function() {
+  	fizzbuzz = new Fizzbuzz();
+  });
 
   describe("should know when a number is divisible", function() {
 
     it("by 3", function() {
-      fizzbuzz = new Fizzbuzz();
       expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true)
     });
 
     it("by 5", function() {
-      fizzbuzz = new Fizzbuzz();
       expect(fizzbuzz.isDivisibleByFive(5)).toEqual(true)
+    });
+
+    it("by 15", function() {
+    	expect(fizzbuzz.isDivisibleByFifteen(15)).toEqual(true)
     });
 
   });
 
   describe("should know when a number is not divisible", function() {
 
-    it("should know when it is NOT divisible by 3", function() {
-      fizzbuzz = new Fizzbuzz();
+    it("by 3", function() {
       expect(fizzbuzz.isDivisibleByThree(4)).toEqual(false)
+    });
+
+    it("by 5", function() {
+    	expect(fizzbuzz.isDivisibleByFive(6)).toEqual(false)
     });
 
   });
