@@ -18,8 +18,10 @@ Fizzbuzz.prototype.play = function(number) {
   	return "fizzbuzz";
   } else if (this.isDivisibleByFive(number)) {
   	return "buzz";
+  } else if (this.isDivisibleByThree(number)) {
+    return "fizz";
   } else {
-  	return "fizz";
+  	return number.toString();
   }
 };
 

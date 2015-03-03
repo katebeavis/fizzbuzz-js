@@ -51,6 +51,9 @@ describe("Fizzbuzz", function() {
     	expect(fizzbuzz.play(15)).toEqual("fizzbuzz")
     });
 
+    it("returns the number given if not divisible by 3 or 5", function() {
+      expect(fizzbuzz.play(2)).toEqual("2")
+    });
   });
 
 });
