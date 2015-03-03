@@ -1,6 +1,6 @@
 describe("Fizzbuzz", function() {
 
-  // var fizzbuzz;
+  var fizzbuzz;
   beforeEach(function() {
   	fizzbuzz = new Fizzbuzz();
   });
@@ -47,7 +47,7 @@ describe("Fizzbuzz", function() {
     	expect(fizzbuzz.play(5)).toEqual("buzz")
     });
 
-    it("", function() {
+    it("returns 'fizzbuzz' when given a number divisible by 15", function() {
     	expect(fizzbuzz.play(15)).toEqual("fizzbuzz")
     });
 
