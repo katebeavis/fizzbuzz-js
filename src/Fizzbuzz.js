@@ -13,6 +13,9 @@ Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
 	return number % 15 === 0;
 };
 
+Fizzbuzz.prototype.play = function(number) {
+  return "fizz";
+};
 
 
 
