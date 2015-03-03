@@ -31,6 +31,10 @@ describe("Fizzbuzz", function() {
     	expect(fizzbuzz.isDivisibleByFive(6)).toEqual(false)
     });
 
+    it("by 15", function() {
+      expect(fizzbuzz.isDivisibleByFifteen(16)).toEqual(false)
+    });
+
   });
 
 });
