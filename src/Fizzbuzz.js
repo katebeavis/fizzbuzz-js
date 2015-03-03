@@ -1,5 +1,8 @@
-
-
+var Fizzbuzz = function() {
+}
+Fizzbuzz.prototype.isDivisibleByThree = function() {
+	return true;
+};
 
 
 

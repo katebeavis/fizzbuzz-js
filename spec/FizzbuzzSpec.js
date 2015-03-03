@@ -6,7 +6,7 @@ describe("Fizzbuzz", function() {
 
     it("should know when it is divisible by 3", function() {
       fizzbuzz = new Fizzbuzz();
-      expect(fizzbuzz.isDivisibleByThree(3)).toBe(true)
+      expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true)
     });
 
   });
