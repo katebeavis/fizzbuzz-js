@@ -1,3 +1,12 @@
+
+
+
+
+
+
+
+
+
 function Player() {
 }
 Player.prototype.play = function(song) {
