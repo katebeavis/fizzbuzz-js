@@ -43,6 +43,14 @@ describe("Fizzbuzz", function() {
       expect(fizzbuzz.play(3)).toEqual("fizz")
     });
 
+    it("returns 'buzz' when given a number divisible by 5", function() {
+    	expect(fizzbuzz.play(5)).toEqual("buzz")
+    });
+
+    it("", function() {
+    	expect(fizzbuzz.play(15)).toEqual("fizzbuzz")
+    });
+
   });
 
 });

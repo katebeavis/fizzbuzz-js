@@ -14,7 +14,13 @@ Fizzbuzz.prototype.isDivisibleByFifteen = function(number) {
 };
 
 Fizzbuzz.prototype.play = function(number) {
-  return "fizz";
+  if (this.isDivisibleByFifteen(number)) {
+  	return "fizzbuzz";
+  } else if (this.isDivisibleByFive(number)) {
+  	return "buzz";
+  } else {
+  	return "fizz";
+  }
 };
 
 
