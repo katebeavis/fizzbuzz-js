@@ -1,12 +1,26 @@
 describe("Fizzbuzz", function() {
 
-  var fizzbuzz;
+  // var fizzbuzz;
 
-  describe("should know when it is divisible by a number", function() {
+  describe("should know when a number is divisible", function() {
 
-    it("should know when it is divisible by 3", function() {
+    it("by 3", function() {
       fizzbuzz = new Fizzbuzz();
       expect(fizzbuzz.isDivisibleByThree(3)).toEqual(true)
+    });
+
+    it("by 5", function() {
+      fizzbuzz = new Fizzbuzz();
+      expect(fizzbuzz.isDivisibleByFive(5)).toEqual(true)
+    });
+
+  });
+
+  describe("should know when a number is not divisible", function() {
+
+    it("should know when it is NOT divisible by 3", function() {
+      fizzbuzz = new Fizzbuzz();
+      expect(fizzbuzz.isDivisibleByThree(4)).toEqual(false)
     });
 
   });
