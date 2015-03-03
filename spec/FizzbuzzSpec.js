@@ -37,6 +37,14 @@ describe("Fizzbuzz", function() {
 
   });
 
+  describe("should return a string when given a number", function() {
+
+    it("returns 'fizz' when given a number divisible by 3", function() {
+      expect(fizzbuzz.play(3)).toEqual("fizz")
+    });
+
+  });
+
 });
 
 
