@@ -24,9 +24,3 @@ Fizzbuzz.prototype.play = function(number) {
   	return number.toString();
   }
 };
-
-
-
-
-
-
